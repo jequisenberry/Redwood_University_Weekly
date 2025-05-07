@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redwood University Weekly</title>
+    <style type="text/css">
+
+        /* Client-specific Styles */
+        #outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" message */
+        body { width: 100% !important; min-width: 100%; } /* Force Hotmail to display emails at full width */
+        .ReadMsgBody { width: 100%; } /* Force Hotmail to display emails at full width */
+        .ExternalClass { width: 100%; } /* Force Hotmail to display emails at full width */
+
+        /* Reset Styles */
+        body { margin: 0; padding: 0; }
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        td, a, span { border-collapse: collapse !important; mso-line-height-rule: exactly; }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            /* Reset */
+            table {
+                width: 100% !important;
+                max-width: unset !important;
+                height: unset !important;
+                min-height: unset !important;
+                border-spacing: 0 !important;
+                margin: 0 !important;
+            }
+
+            tr { 
+                height: unset !important;
+            }
+
+            td {
+                height: unset !important;
+                width: auto !important;
+                height: unset !important;
+                padding: unset !important;
+                border-spacing: unset !important;
+                margin: 0 !important;
+                line-height: 1.5 !important;
+                box-sizing: border-box;
+            }
+
+            img {
+                max-width: 100% !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            span {
+                font-size: 1em !important;
+                line-height: 1 !important;
+            }
+
+            /* CTA */
+            .cta-desktop-row {
+                display: none;
+                overflow: hidden;
+                height: 0;
+                max-height: 0;
+            }
+
+            .article-cta {
+                display: block;
+                text-align: center !important;
+            }
+
+            .article-cta span {
+                display: inline-block !important;
+                overflow: unset !important;
+                max-width: unset !important;
+                max-height: unset !important;
+                padding: 8px 20px !important;
+                margin: 20px auto 0;
+                font-size: 18px;
+                color: #FFFFFF;
+                background-color: #C07F00;
+            }
+
+            /* Header */
+            .header {
+                padding: 20px !important;
+                border: 1px solid #000;
+            }
+
+            .header-logo {
+                width: 50px !important;
+                height: auto !important;
+            }
+
+            .header-social-media {
+                width: 200px !important;
+            }
+
+            /* Header: Social Media */
+            .header-social-media span{
+                display: block;
+                font-size: 20px !important;
+                padding-bottom: 10px !important;
+            }
+            
+            .header-social-media-icon {
+                padding-left: 20px !important;
+            }
+
+            .header-social-media-icon img {
+                width: 40px !important;
+                height: auto !important;
+            }
+
+            /* Body */
+            .article-container {
+                padding: 30px !important;
+            }
+
+            .article-container span {
+                line-height: 1.8 !important;
+            }
+
+            .article-title {
+                display: block;
+                font-size: 20px !important;
+                line-height: 1.2 !important;
+                padding: 10px 0 !important;
+            }
+
+            /* Body: Main Article*/
+            .main-article-title {
+                display: block;
+                font-size: 28px !important;
+                padding-bottom: 20px;
+            }
+
+            /* Body: Follow-ups Article */
+            .follow-up-article-container td {
+                display: block;
+                width: 100% !important;
+                height: unset !important;
+            }
+
+            /* Body: Promo-Article */
+            .promo-article-header {
+                float: left;
+                width: 230px !important;
+
+            }
+
+            .promo-article-header td {
+                display: block !important;
+               padding-right: 20px !important;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 30px 0 !important;
+            }
+
+            .footer table td{
+                width: 150px !important;
+            }
+
+            .footer-divide {
+                max-width: 10px !important;
+            }
+
+
+            /* Color Scheme Adjust */
+            .article-color-scheme-alt {
+                background-color: #F9EDB9 !important;
+            }
+
+            .article-color-scheme {
+                background-color: #FFFFFF !important;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+  
+            /* Body: Promo-Article */
+            .promo-article-header {
+                float: unset;
+                width: 100% !important;
+                height: unset !important;
+            }
+
+            .promo-article-header td {
+               padding: 0 20% !important;
+            }
+        }
+
+        /* Darkmode */
+        @media (Prefers-color-scheme: dark) { 
+
+            /* Reset */
+            body,
+            body table,
+            .main-container {
+            background-color: #000000;
+            }
+
+            span {
+                color: #FFFFFF !important;
+            }
+            
+            /* Header */
+            .header-color-scheme, 
+            .header-color-scheme table,
+            .footer,
+            .footer table
+            {
+                background-color: #D5D1B2 !important;
+            }
+
+            .header-social-media span, 
+            .footer span { 
+                color: #4C3D3D !important;
+            }
+
+            
+            .article-color-main {
+                background-color: #000000 !important;
+            }
+
+            /* Color Scheme Adjust */
+            .article-color-scheme-alt,
+            .article-color-scheme-alt table {
+                background-color: #322838 !important;
+            }
+
+            .article-color-scheme, 
+            .article-color-scheme table {
+                background-color: unset !important;
+            }
+
+            .promo-color-scheme,
+            .promo-color-scheme table {
+                background-color: #000000 !important;
+            }
+
+        }
+        
+        @media (Prefers-color-scheme: dark) and (max-width: 600px) {
+            .article-color-scheme-alt,
+            .article-color-scheme-alt table {
+                background-color: #322838 !important;
+            }
+
+            .article-color-scheme, 
+            .article-color-scheme td {
+                background-color: #000000 !important;
+            }
+
+            .promo-color-scheme,
+            .promo-color-scheme table {
+                background-color: #322838 !important;
+            } 
+        }
+        
+
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #FFFFFF;">
+
+<!--[if (IE)|mso]>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr>
+<td>
+<![endif]-->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0"
+style=" width: 100%px; margin: 0 auto; border-collapse: collapse; border-spacing: 0;">
+<tr>
+<td align="center" valign="top"
+style="text-align: center; vertical-align: top;">
+
+<center>
+<table class="main-container" width="600" cellpadding="0" cellspacing="0" style=" width: 600px; margin: 0 auto; border-collapse: collapse; border-spacing: 0;">
+
+    <!-- ===== HEADER ===== -->
+    <tr height="180" style="height: 180px">
+    <td height="180" align="center" valign="top"
+    style="width: 180px; padding: 0; text-align: center; vertical-align: top;">
+
+        <table width="600" height="180" cellpadding="0" cellspacing="0" bgcolor="#FFD95A" border="0"
+        class="header-color-scheme"
+        style=" width: 600px; max-width: 600px; height: 180px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #FFD95A;">
+                    
+            <tr height="70" style="height: 70px">
+                <td height="70" align="center" valign="top"
+                class="header"
+                style="height: 70px; padding: 0; text-align: center; vertical-align: top;">
+
+                    <center>
+                    <table width="560" height="70" cellpadding="0" cellspacing="0" bgcolor="#FFD95A" border="0"
+                        style=" width: 560px; max-width: 560px; height: 70px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #FFD95A;">
+                        <tr height="70" style="height: 70;">
+
+                            <td width="257" height="70" style="width: 257px; height: 70px;"></td>
+
+                            <td width="46" height="70" align="center" valign="middle"
+                            style="width: 46px; height: 70px; padding: 0; text-align: center; vertical-align: middle;">                      
+
+                                <img src="images/header-logo.png" atl="Visit our Facebook link" width="46" height="44" border="0"
+                                class="header-logo"
+                                style="display: block; width: 46px; height: 44px; margin: 0; border: none">
+
+                            </td>
+
+                            <td width="257" height="70" align="right" valign="middle"
+                            style="width: 257px; height: 70px; padding: 0; vertical-align: middle;">                      
+
+                                <table width="98" height="52" cellpadding="0" cellspacing="0" bgcolor="#FFD95A" border="0"
+                                class="header-social-media"
+                                style=" width: 98px; max-width: 98px; height: 52px; border-collapse: collapse; border-spacing: 0; background-color: #FFD95A;">
+                                    <tr height="30" style="height: 30;">
+                                        
+                                        <td  height="30" align="right" valign="top"
+                                        style="height: 30px; padding: 0; text-align: right; vertical-align: top;">                      
+
+                                            <a href="/" target="_blank" style="text-decoration: none; color: #4C3D3D;">
+                                            <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; font-weight: bolder; line-height: 1; color: #4C3D3D;">
+                                                SITE
+                                            </span>
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr height="22" style="height: 22;">
+
+                                        <td width="98" height="22" align="center" valign="bottom"
+                                        style="width: 98px; height: 22px; padding: 0; text-align: center; vertical-align: bottom;">                      
+
+                                            <table width="98" height="22" cellpadding="0" cellspacing="0" bgcolor="#FFD95A" border="0"
+                                            style=" width: 98px; max-width: 98px; height: 22px;  margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #FFD95A;">
+
+                                                <tr height="22" style="height: 22px;">
+                                            
+                                                    <td width="22" height="22" align="center" valign="middle"
+                                                    class="header-social-media-icon"
+                                                    style="width: 22px; height: 22px; padding: 0; text-align: center; vertical-align: middle;">                      
+                                                        <a href="/" target="_blank">
+                                                            <img src="images/header-facebook.png" atl="Visit our Facebook link" width="22" height="22" border="0"
+                                                            style="display: block; width: 22px; height: 22px; margin: 0; border: none">
+                                                        </a>
+                                                    </td>
+                
+                                                    <td width="16" height="22" align="center" valign="middle"
+                                                    style="width: 16px; height: 22px; padding: 0; text-align: center; vertical-align: middle;">                      
+                                                    </td>
+                                    
+                                                    <td width="22" height="22" align="center" valign="middle"
+                                                    class="header-social-media-icon"
+                                                    style="width: 22px; height: 22px; padding: 0; text-align: center; vertical-align: middle;">                      
+                                                        <a href="/" target="_blank">
+                                                            <img src="images/header-instagram.png" atl="Visit our Instagram link" width="22" height="22" border="0"
+                                                            style="display: block; width: 22px; height: 22px; margin: 0; border: none">
+                                                        </a>
+                                                    </td>
+                
+                                                    <td width="16" height="22" align="center" valign="middle"
+                                                    style="width: 16px; height: 22px; padding: 0; text-align: center; vertical-align: middle;">                      
+                                                    </td>
+                
+                                                    <td width="22" height="22" align="center" valign="middle"
+                                                    class="header-social-media-icon"
+                                                    style="width: 22px; height: 22px; padding: 0; text-align: center; vertical-align: middle;">                      
+                                                        <a href="/" target="_blank">
+                                                            <img src="images/header-x.png" atl="Visit our X link" width="25" height="25" border="0"
+                                                            style="display: block; width: 22px; height: 22px; margin: 0; border: none">
+                                                        </a>
+                                                    </td>
+                
+                                                </tr>    
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+                        </tr>
+                    </table>
+                    </center>
+
+                </td>
+            </tr>
+            <tr height="110" style="height: 110px">
+                <td width="600" height="110" align="center" valign="top"
+                style="width: 600px; height: 110px; padding: 0; text-align: center; vertical-align: top;">                      
+                    <img src="images/header-hero.jpg" atl="Reddwood State University Weekly" width="600" height="110" border="0" 
+                    style="display: block; width: 600px; height: 110px; margin: 0; border: none">
+                </td>
+            </tr>
+
+        </table>
+    </td>
+    </tr>
+    <!-- ===== END: HEADER ===== -->
+
+    <!-- ===== BODY ===== -->
+    
+    <!-- BODY: Main Article -->
+    <tr>
+    <td class="article-color-main">
+
+        <center>
+        <table width="518" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0"
+        class="article-color-main"
+        style=" width: 518px; max-width: 518px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #FFFFFF;">            
+            <tr height="40" style="height: 40px;">
+
+                <td height="30" align="center" valign="top" style="height: 30px;"></td>
+
+            </tr>
+            <tr>
+
+                <td width="518" align="left" valign="top"
+                class="article-container"
+                style="height: 518px; padding: 0; text-align: left; vertical-align: top;">
+                    <span
+                    class="main-article-title"
+                    style="display:block; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 28px; font-weight: bolder; text-align: left; line-height: 2; color: #4C3D3D;">
+                        Spring Semester Kicks Off !
+                    </span>
+
+                    <span style="display:inline-block; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; text-align: left; line-height: 1.6; color: #4C3D3D; white-space: pre-line;">As dawn filters through the towering sequoias, nearly 15,000 students return to Redwood State University for Spring 2025. The Quad hums with newfound energy as winter's quiet gives way to freshmen orientation, study groups gathering beneath rustling branches, and faculty igniting research projects across campus.
+                    Campus Life Director Maya Chen kicked things off with a spring BBQ on the Quad Lawn—complete with local snacks and live acoustic music. “Gathering under these giants reminds us who we are,” Chen said. “This semester, we're all about sustainability, wellness, and shared experiences.”
+                    In academics, the School of Environmental Sciences launches a sequoia-resilience study in partnership with local conservation groups, while the Arts Department unveils its first student-curated gallery in the renovated Redwood Hall Annex.
+                    With solar-powered charging benches dotting the Quad and new late-night shuttle routes, RSVPs are already open for February's Career Fair and Valentine's Open Mic. Whether you seek internships, quiet study spots, or community events, spring at Redwood State promises something for everyone.</span>
+
+                </td>
+
+            </tr>
+        </table>
+        </center>
+
+    </td>
+    </tr>
+    <tr height="40" style="height: 40px;" >
+    
+        <td height="40" align="center" valign="top" class="article-color-main"></td>
+
+    </tr>
+
+
+     <!-- BODY: Column 2 -->
+    <tr>
+    <td align="center" valign="top"
+    class="article-color-main"
+    style="padding: 0; text-align: center; vertical-align: middle;">                      
+
+        <center>
+        <table width="550" cellpadding="0" cellspacing="0" bgcolor="#F9EDB9" border="0"
+        class="follow-up-article-container article-color-scheme-alt"
+        style=" width: 550px; max-width: 550px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #F9EDB9;">
+            <tr height="20" style="height: 20px">
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+                <td width="245" height="20" style="width: 245px; height: 20px;"></td>
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+                <td width="245" height="20" style="width: 245px; height: 20px;"></td>
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+            </tr>
+            <tr>
+
+                <td width="20" style="width: 20px;"></td>
+
+                <!-- Feature 1 -->
+                <td width="245" align="left" valign="top"
+                class="article-container"
+                style="width: 245px; padding: 0; text-align: left; vertical-align: top;">                      
+
+                    <table width="245" cellpadding="0" cellspacing="0"  border="0"
+                    class="promo-article-header"
+                    style=" width: 245px; max-width: 245px; margin: 0; border-collapse: collapse; border-spacing: 0;">
+                        <tr height="120px" style="height: 120px"
+                        style="height: 120px; padding: 0; text-align: center; vertical-align: top;">
+
+                            <td height="120" align="center" valign="top"
+                            style="height: 120px; padding: 0; text-align: center; vertical-align: top;">
+                                <img width="245" height="120"
+                                src="images/minor-feature-1.jpg" alt="Reddwood State undergrad planting sapling." style="display: block; width: 245px; height: 120px; border: none;" />
+                            </td>
+
+                        </tr>
+                        <tr height="70px" style="height: 70px">
+                            
+                            <td height="70" align="center" valign="middle"
+                            style="height: 70px; padding: 0; text-align: center; vertical-align: middle;">
+                                <span
+                                class="article-title"
+                                style="display: block; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 24px; font-weight: bold; text-align: center; line-height: 1.1; color: #4C3D3D">
+                                    Redwood Grove Renovation
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>
+
+                    <span width="245" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: left; line-height: 1.6; color: #4C3D3D">
+                        The cherished Redwood Grove study area has been refreshed for spring: reclaimed-timber picnic tables now flank new USB-C charging posts, and gentle strand lighting stretches between the trunks to keep late-night study sessions aglow. Look for “Forest Nook” markers along the quad's east edge and settle in beneath the canopy for your next group project or solo reading hour.
+                    </span><br>
+
+                    <a href="/" target="_blank" class="article-cta">
+                        <span
+                        width="0" height="0"
+                        style="display: none; overflow: hidden; max-width: 0; min-height: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0px; text-align: center; line-height: 0;">
+                            READ MORE
+                        </span>
+                    </a>
+            
+                </td>
+
+                <td width="20" style="width: 20px"></td>
+                
+                <!-- Feature 2 -->
+                <td width="245" align="left" valign="top"
+                class="article-container article-color-scheme"
+                style="width: 245px; padding: 0; text-align: left; vertical-align: top;">                      
+
+                    <table width="245" cellpadding="0" cellspacing="0" border="0"
+                    class="promo-article-header"
+                    style=" width: 245px; max-width: 245px; margin: 0; border-collapse: collapse; border-spacing: 0;">
+                        
+                        <tr height="120px" style="height: 120px">
+
+                            <td height="120" align="center" valign="top"
+                            style="height: 120px; padding: 0; text-align: center; vertical-align: top;">
+                                <img width="245" height="120"
+                                src="images/minor-feature-2.jpg" alt="Reddwood State undergrad planting sapling." style="display: block; width: 245px; height: 120px; border: none;" />
+                            </td>
+
+                        </tr>
+                        <tr height="70px" style="height: 70px"
+                        style="height: 70px; padding: 0; text-align: center; vertical-align: top;">
+                            
+                            <td height="70" align="center" valign="top"
+                            style="height: 70px; padding: 0; text-align: center; vertical-align: middle;">
+                                <span
+                                class="article-title"
+                                style="display: block; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 24px; font-weight: bold; text-align: center; line-height: 1.1; color: #4C3D3D">
+                                    Green Roots Initiative
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>
+
+                    <span width="245" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: left; line-height: 1.6; color: #4C3D3D">
+                        This Arbor Day (April 22), join fellow Sequoia Scholars in planting 100 native redwood saplings to bolster campus biodiversity. Volunteers earn service credits and take home a commemorative sapling of their own—registration opens February 10 via the Student Center portal. Let's grow together!
+                    </span><br>
+
+                    <a href="/" target="_blank" class="article-cta">
+                        <span
+                        width="0" height="0"
+                        style="display: none; overflow: hidden; max-width: 0; min-height: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0px; text-align: center; line-height: 0;">
+                            READ MORE
+                        </span>
+                    </a>
+            
+                </td>
+
+                <td width="20" style="width: 20px;"></td>
+
+            </tr>
+            <tr class="cta-desktop-row">
+
+                <td width="20" height="48" style="width: 25px; height: 48;"></td>
+
+                <!-- Feature 1: CTA -->
+                <td width="245" height="48" align="center" valign="bottom"
+                style="width: 245px; padding: 0; vertical-align: bottom;">
+
+                    <center>
+                    <a href="/" target="_blank">
+                    <table width="100" cellpadding="0" cellspacing="0" bgcolor="#C07F00" border="0"
+                    style=" width: 100px; max-width: 100px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #C07F00;">
+                        <tr>
+                            <td align="center" valign="middle" bgcolor="#C07F00">
+                                <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: center; line-height: 2; color: #FFFFFF; display: block;">
+                                    READ MORE
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    </a>
+                    </center>
+                    
+                </td>
+
+                <td width="20" height="48" style="width: 25px; height: 48;"></td>
+
+                <!-- Feature 1: CTA -->
+                <td width="245" height="48" align="center" valign="bottom"
+                style="width: 245px; padding: 0; vertical-align: bottom;">
+
+                    <center>
+                    <a href="/" target="_blank">
+                    <table width="100" cellpadding="0" cellspacing="0" bgcolor="#C07F00" border="0"
+                    style=" width: 100px; max-width: 100px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #C07F00;">
+                        <tr>
+                            <td align="center" valign="middle" bgcolor="#C07F00">
+                                <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: center; line-height: 2; color: #FFFFFF; display: block;">
+                                    READ MORE
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    </a>
+                    </center>
+                    
+                </td>
+
+                <td width="20" height="48" style="width: 25px; height: 48;"></td>
+
+
+            </tr>
+            <tr height="20" style="height: 20px">
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+                <td width="245" height="20" style="width: 245px; height: 20px;"></td>
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+                <td width="245" height="20" style="width: 245px; height: 20px;"></td>
+
+                <td width="20" height="20" style="width: 20px; height: 20px;"></td>
+
+            </tr>
+        </table>
+        </center>
+
+    </td>
+    </tr>
+    
+    <tr height="40" style="height: 40px;">
+    <td height="40" align="center" valign="top"
+    class="article-color-main"
+    style="height: 40px; padding: 0; text-align: center; vertical-align: top;">
+    </td>
+    
+    </tr>
+    
+     <!-- BODY: Column 3 -->
+    <tr>
+    <td class="article-color-main">
+        <center>
+        <table width="550" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0"
+        class="follow-up-article-container article-color-scheme-alt promo-color-scheme"
+        style=" width: 550px; max-width: 550px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #FFFFFF;">
+            <tr>
+                <td width="20" style="width: 20px;"></td>
+
+                <!-- Feature 1 -->
+                <td width="160" align="left" valign="top"
+                class="article-container"
+                style="width: 160px; padding: 0; text-align: left; vertical-align: top;">
+
+                    <table width="160" height="140px" cellpadding="0" cellspacing="0" border="0"
+                    class="promo-article-header"
+                    style=" width: 160px; max-width: 160px; height: 140px; margin: 0; border-collapse: collapse; border-spacing: 0;">
+                        <tr height="80" style="height: 80px;">
+                            
+                            <td height="80" align="center" valign="top"
+                            style="height: 80; padding: 0; text-align: center; vertical-align: top;">
+                                <img width="160" height="80"
+                                src="images/feature-civ.jpg" alt="Feature Civilization" style="display: block; width: 160px; height: 80px; border: none;" />
+                            </td>
+
+                        </tr>
+                        <tr height="60" style="height: 60px;">
+                            
+                            <td height="60" align="center" valign="middle"
+                            style="height: 60; padding: 0; text-align :center; vertical-align: middle;">
+                                <span
+                                class="article-title"
+                                style="display: block; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: bold; text-align: center; line-height: 1.1; color: #4C3D3D">
+                                    Explores Ancient Civilizations
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>            
+
+                    <span width="160"
+                    style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: left; line-height: 1.6; color: #4C3D3D">
+                        Dr. Ethan Ward, renowned archaeologist and author of Echoes of the Ancients, will present a lecture series this March. Seats are limited!
+                    </span><br>
+                    
+                    <a href="/" target="_blank" class="article-cta">
+                    <span
+                    width="0" height="0"
+                    style="display: none; overflow: hidden; max-width: 0; min-height: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0px; text-align: center; line-height: 0;">
+                        READ MORE
+                    </span>
+                    </a>
+            
+                </td>
+
+                <td width="15" style="width: 15px;"></td>
+                
+                <!-- Feature 2 -->
+                <td width="160" align="left" valign="top"
+                class="article-container article-color-scheme"
+                style="width: 160px; padding: 0; text-align: left; vertical-align: top;">
+
+                    <table width="160" height="140px" cellpadding="0" cellspacing="0" border="0"
+                    class="promo-article-header"
+                    style=" width: 160px; max-width: 160px; height: 140px; margin: 0; border-collapse: collapse; border-spacing: 0;">
+                        <tr height="80" style="height: 80px;">
+                            
+                            <td height="80" align="center" valign="top"
+                            style="height: 80; padding: 0; text-align: center; vertical-align: top;">
+                                <img width="160" height="80"
+                                src="images/feature-debate.jpg" alt="Feature Debate" style="display: block; width: 160px; height: 80px; border: none;" />
+                            </td>
+
+                        </tr>
+                        <tr height="60" style="height: 60px;">
+                            
+                            <td height="60" align="center" valign="middle"
+                            style="height: 60; padding: 0; text-align :center; vertical-align: middle;">
+                                <span
+                                class="article-title"
+                                style="display: block; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: bold; text-align: center; line-height: 1.1; color: #4C3D3D">
+                                    Debate Champion to Host Workshop
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>            
+        
+                    <span width="160"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: left; line-height: 1.6; color: #4C3D3D">
+                        National debate champion Clara Nguyen will lead a one-day workshop on public speaking and argumentation techniques this semester. Don't miss out!
+                    </span><br>
+
+                    <a href="/" target="_blank" class="article-cta">
+                    <span
+                    width="0" height="0"
+                    style="display: none; overflow: hidden; max-width: 0; min-height: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0px; text-align: center; line-height: 0;">
+                        READ MORE
+                    </span>
+                    </a>
+
+                </td>
+
+                <td width="15" style="width: 15px;"></td>
+                
+                <!-- Feature 3 -->
+                <td width="160" align="left" valign="top"
+                class="article-container"
+                style="width: 160px; padding: 0; text-align: left; vertical-align: top;">
+
+                    <table width="160" height="140px" cellpadding="0" cellspacing="0" border="0"
+                    class="promo-article-header"
+                    style=" width: 160px; max-width: 160px; height: 140px; margin: 0; border-collapse: collapse; border-spacing: 0;">
+                        <tr height="80" style="height: 80px;">
+                            
+                            <td height="" align="center" valign="top"
+                            style="height: 80; padding: 0; text-align: center; vertical-align: top;">
+                                <img width="160" height="80"
+                                src="images/feature-astro.jpg" alt="Feature Astronomy" style="display: block; width: 160px; height: 80px; border: none;" />
+                            </td>
+
+                        </tr>
+                        <tr height="60" style="height: 60px;">
+                            
+                            <td height="60" align="center" valign="middle"
+                            style="height: 60; padding: 0; text-align :center; vertical-align: middle;">
+                                <span 
+                                class="article-title"
+                                style="display: block; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: bold; text-align: center; line-height: 1.1; color: #4C3D3D">
+                                    Astronomy Night Returns This April
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>         
+    
+                    <span width="160"
+                    
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: left; line-height: 1.6; color: #4C3D3D">
+                        National debate champion Clara Nguyen will lead a one-day workshop on public speaking and argumentation techniques this semester. Don't miss out!
+                    </span><br>
+
+                    <a href="/" target="_blank" class="article-cta">
+                    <span
+                    width="0" height="0"
+                    style="display: none; overflow: hidden; max-width: 0; min-height: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0px; text-align: center; line-height: 0;">
+                        READ MORE
+                    </span>
+                    </a>
+
+                </td>
+
+                <td width="20" style="width: 20px;"></td>
+                
+            </tr>
+            <tr class="cta-desktop-row">
+
+                <td width="15" height="48" style="width: 15px; height: 48;"></td>
+
+                <!-- Feature 1: CTA -->
+                <td width="160" height="48" align="center" valign="bottom"
+                class="article-color-minor"
+                style="width: 160px; padding: 0; vertical-align: bottom;">
+
+                    <center>
+                    <a href="/" target="_blank">
+                    <table width="100" cellpadding="0" cellspacing="0" bgcolor="#C07F00" border="0"
+                    style=" width: 100px; max-width: 100px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #C07F00;">
+                        <tr>
+                            <td align="center" valign="middle" bgcolor="#C07F00">
+                                <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: center; line-height: 2; color: #FFFFFF; display: block;">
+                                    READ MORE
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    </a>
+                    </center>
+                    
+                </td>
+
+                <td width="15" height="48" style="width: 15px; height: 48;"></td>
+
+                <!-- Feature 2: CTA -->
+                <td width="160" height="48" align="center" valign="bottom"
+                class="article-color-minor-2"
+                style="width: 160px; padding: 0; vertical-align: bottom;">
+
+                    <center>
+                    <a href="/" target="_blank">
+                    <table width="100" cellpadding="0" cellspacing="0" bgcolor="#C07F00" border="0"
+                    style=" width: 100px; max-width: 100px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #C07F00;">
+                        <tr>
+                            <td align="center" valign="middle" bgcolor="#C07F00">
+                                <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: center; line-height: 2; color: #FFFFFF; display: block;">
+                                    READ MORE
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    </a>
+                    </center>
+                    
+                </td>
+
+                <td width="15" style="width: 15px;"></td>
+
+                <!-- Feature 3: CTA -->
+                <td width="160" height="48" align="center" valign="bottom"
+                class="article-color-minor"
+                style="width: 160px; padding: 0; vertical-align: bottom;">
+
+                    <center>
+                    <a href="/" target="_blank">
+                    <table width="100" cellpadding="0" cellspacing="0" bgcolor="#C07F00" border="0"
+                    style=" width: 100px; max-width: 100px; margin: 0; border-collapse: collapse; border-spacing: 0; background-color: #C07F00;">
+                        <tr>
+                            <td align="center" valign="middle" bgcolor="#C07F00">
+                                <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; text-align: center; line-height: 2; color: #FFFFFF; display: block;">
+                                    READ MORE
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    </a>
+                    </center>
+                    
+                </td>
+
+                <td width="15" height="48" style="width: 15px; height: 48;"></td>
+
+            </tr>
+        </table>
+        </center>
+    </td>
+    </tr>
+    <tr height="40" style="height: 40px;">
+
+        <td height="40" style="height: 40px;" class="article-color-main">
+        </td>
+    
+    </tr>
+
+    <!-- ===== END: BODY ===== -->
+
+    <!-- ===== FOOTER ===== -->
+
+    <tr height="60" style="height: 60px;">
+        <td height="60" align="center" valign="top" bgcolor="#FFD95A" class="footer">
+            
+            <table
+            width="300" height="80" cellpadding="0" cellspacing="0" bgcolor="#FFD95A" border="0"
+            style="width: 300px; max-width: 300px; margin: 0 auto; border-collapse: collapse; border-spacing: 0; background-color: #FFD95A;">
+                <tr height="80" style="height: 80px;">
+
+                    <td width="140" align="right" valign="middle"
+                    class="footer-option"
+                    style="width: 140px; text-align: right; vertical-align: center;">
+                        <a href="/" target="_blank" style="color: #4C3D3D; text-decoration: none;">
+                            <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: right; line-height: 1; color: #4C3D3D; display: block;">
+                                Account Settings
+                            </span>
+                        </a>
+                    </td>
+
+                    <td width="20" height="80" align="center" valign="middle"
+                    class="footer-divide"
+                    style="width: 20px; text-align: center; vertical-align: center;">
+                        <span width="160" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: center; line-height: 2; color: #4C3D3D; display: block;">
+                            |
+                        </span>
+                    </td>
+                    
+                    <td width="140" align="left" valign="middle"
+                    class="footer-option"
+                    style="width: 140px; text-align: left; vertical-align: center;">
+                        <a href="/" target="_blank" style="color: #4C3D3D; text-decoration: none;">
+                            <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; text-align: left; line-height: 1; color: #4C3D3D; display: block;">
+                                Unsubscribe
+                            </span>
+                        </a>
+                    </td>
+
+                </tr>
+            </table>    
+        </td>
+    
+    </tr>
+</table>
+
+<!-- ===== END: FOOTER ===== -->
+
+</td>
+</tr>
+</table>
+<!--[if (IE)|mso]>
+</td>
+</tr>
+</table>    
+<![endif]-->
+
+<!-- prevent Gmail on iOS font size manipulation -->
+<div style="display: none; white-space: nowrap; font: 15px courier; line-height: 0;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</div>
+
+</body>
+</html>
